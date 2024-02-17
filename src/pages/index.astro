@@ -4,73 +4,85 @@ export const prerender = true;
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="メニュー表">
+<Layout title="プロフィール">
     <main>
-		<section class="menu">
-			<h1 class="title courgette">MENU</h1>
-			<div class="menu-detail">
-				<div>
-					<h2 class="courgette">Hors-d'oeuvre</h2>
-					<p>
-						帆立貝と甘海老の冷製<br>
-						カリフラワーのクレマと根菜のトランシェ
-					</p>
-				</div>
-				<div>
-					<h2 class="courgette">Deuxième</h2>
-					<p>季節野菜のポタージュ</p>
-				</div>
-				<div>
-					<h2 class="courgette">Poisson</h2>
-					<p>
-						鱸のポワレ<br>
-						カルダモン風味のキャロットラペ<br>
-						レモンクリームソース
-					</p>
-				</div>
-				<div>
-					<h2 class="courgette">Viande</h2>
-					<p>
-						厳選牛のグリエ<br>
-						ジュドヴィアンド
-					</p>
-				</div>
-				<div>
-					<h2 class="courgette">Dessert</h2>
-					<p>
-						BERGAMOTE<br>
-						レモンのコンフィチュールとピスタチオ生地に<br>
-						カルダモン風味のベルガモットムース<br>
-						ミント香る爽やかなレモンソルベを添えて
-					</p>
-				</div>
-				<div>
-					<h2 class="courgette">Pain</h2>
-					<p>自家製パン</p>
-				</div>
-				<div>
-					<h2 class="courgette">Café ou Thé</h2>
-					<p>コーヒー 又は 紅茶</p>
-				</div>
-			</div>
+		<section class="profile">
+			<section class="top-messege">
+				<h1 class="title courgette">PROFILE</h1>
+				<p>
+					本日は、お越しいただきありがとうございます<br>
+					たくさん食べて飲んで楽しんでください！！
+				</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">お名前は？</h2>
+				<p class="megumu name-label">新原 龍（にいはら めぐむ）です<br>龍と書いてめぐむと呼びます</p>
+				<p class="arisa name-label">田野 有祥（たの ありさ）です</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">生年月日は？</h2>
+				<p class="megumu name-label">1996年12月23日<br>平成天皇と同じ誕生日です</p>
+				<p class="arisa name-label">1996年5月6日です<br>毎度GWです</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">血液型は？</h2>
+				<p class="megumu name-label">O型<br>でも几帳面ですよw</p>
+				<p class="arisa name-label">O型<br>O型ぽいと言われます</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">好きな食べ物は？</h2>
+				<p class="megumu name-label">唐揚げ・餃子・焼き鳥・もつ鍋<br>これの繰り返しで生きていけます</p>
+				<p class="arisa name-label">ブロッコリー・ままの作ったお好み焼き<br>ままのお好み焼き以外は食べれません<br>最近お好み焼き修行中です</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">趣味は？</h2>
+				<p class="megumu name-label">パソコン触ること・コーヒー・カメラ<br>キャンプ行けてないです...</p>
+				<p class="arisa name-label">漫画・アニメ・映画鑑賞・宅トレ<br>こう見えてインドア派です</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">一言で自分の性格を表すと？</h2>
+				<p class="megumu name-label">思慮深い<br>考えすぎるとも言えます...</p>
+				<p class="arisa name-label">素直<br>喜怒哀楽がはっきりしていて空腹だと不機嫌になりがちです</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">初めて会ったときの印象は？</h2>
+				<p class="megumu name-label">仕事ができる人・バイト先の先輩・少し強面・きれいな人</p>
+				<p class="arisa name-label">「仕事できる人入ってきたな〜」というくらい</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">相手の一番尊敬できるところは？</h2>
+				<p class="megumu name-label">自分の心に従順なところ<br>家族思いなところ</p>
+				<p class="arisa name-label">視野が広くて心遣いができるところ</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">相手に直して欲しいところは？</h2>
+				<p class="megumu name-label">料理中にお腹すいたを連呼してくるところ<br>毎回「今作ってる」と返答しています</p>
+				<p class="arisa name-label">考えすぎて悩みすぎるところ<br>そんなに悩んでも解決しません<br>気楽に考えてください</p>
+			</section>
+			<section class="question-box">
+				<h2 class="question">どんな家庭を築きたいか？</h2>
+				<p class="megumu name-label">ニコニコ元気な関係<br>今まで通り言いたいことを言い合える家庭</p>
+				<p class="arisa name-label">お互いを尊敬し支えあえる家庭</p>
+			</section>
 		</section>
     </main>
 </Layout>
 
 <style>
-	.menu {
-		text-align: center;
+	.profile {
+		text-align: left;
 		padding: 30px 20px 0;
 	}
-	.courgette {
-		font-family: 'Courgette', cursive;
+	.top-messege {
+		text-align: center;
+		margin-bottom: 50px;
 	}
-	.title {
+	.top-messege h1 {
 		font-size: 16vw;
-		margin: 20px 0 30px;
+		margin: 20px 0 40px;
 		position: relative;
 	}
-	.title::before {
+	.top-messege h1::before {
 		content: '';
 		background-image: url("/dog_128.svg");
 		background-size: contain;
@@ -79,12 +91,12 @@ import Layout from '../layouts/Layout.astro';
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 20px;
+		left: 0;
 		width: 50px;
 		height: 50px;
 	}
 
-	.title::after {
+	.top-messege h1::after {
 		content: '';
 		background-image: url("/dog_128.svg");
 		background-size: contain;
@@ -93,16 +105,60 @@ import Layout from '../layouts/Layout.astro';
 		display: block;
 		position: absolute;
 		bottom: 0;
-		right: 20px;
+		right: 0;
 		width: 50px;
 		height: 50px;;
 	}
 
-	.menu-detail {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 20px;
+	.question-box {
+		border: 1px solid #aaa;
+		border-radius: 10px;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	.question-box .question {
+		position: relative;
+		margin: 0 0 30px;
+		font-size: 20px;
+		padding-left: 2.3rem;
+	}
+	.question-box .question::before{
+		content: '';
+		background-image: url("/dog_128.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		position: absolute;
+		top: -2px;
+		left: 0;
+		width: 30px;
+		height: 30px;
+	}
+	.question-box p:last-child {
+		margin-bottom: 0;
+	}
+	.question-box p {
+		font-size: 16px;
+	}
+	.question-box .name-label {
+		position: relative;
+		margin-top:2.6rem;
+	}
+	.question-box .name-label::before {
+		font-family: 'Courgette', cursive;
+		position: absolute;
+		display: inline-block;
+		top: -1.6rem;
+		left: 0;
+	}
+	.question-box .megumu::before {
+		content: "megumu";
+	}
+	.question-box .arisa::before {
+		content: "arisa";
+	}
+	.courgette {
+		font-family: 'Courgette', cursive;
 	}
 </style>

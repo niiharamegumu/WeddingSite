@@ -1,0 +1,108 @@
+---
+export const prerender = true;
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="メニュー表">
+    <main>
+		<section class="menu">
+			<h1 class="title courgette">MENU</h1>
+			<div class="menu-detail">
+				<div>
+					<h2 class="courgette">Hors-d'oeuvre</h2>
+					<p>
+						帆立貝と甘海老の冷製<br>
+						カリフラワーのクレマと根菜のトランシェ
+					</p>
+				</div>
+				<div>
+					<h2 class="courgette">Deuxième</h2>
+					<p>季節野菜のポタージュ</p>
+				</div>
+				<div>
+					<h2 class="courgette">Poisson</h2>
+					<p>
+						鱸のポワレ<br>
+						カルダモン風味のキャロットラペ<br>
+						レモンクリームソース
+					</p>
+				</div>
+				<div>
+					<h2 class="courgette">Viande</h2>
+					<p>
+						厳選牛のグリエ<br>
+						ジュドヴィアンド
+					</p>
+				</div>
+				<div>
+					<h2 class="courgette">Dessert</h2>
+					<p>
+						BERGAMOTE<br>
+						レモンのコンフィチュールとピスタチオ生地に<br>
+						カルダモン風味のベルガモットムース<br>
+						ミント香る爽やかなレモンソルベを添えて
+					</p>
+				</div>
+				<div>
+					<h2 class="courgette">Pain</h2>
+					<p>自家製パン</p>
+				</div>
+				<div>
+					<h2 class="courgette">Café ou Thé</h2>
+					<p>コーヒー 又は 紅茶</p>
+				</div>
+			</div>
+		</section>
+    </main>
+</Layout>
+
+<style>
+	.menu {
+		text-align: center;
+		padding: 30px 20px 0;
+	}
+	.courgette {
+		font-family: 'Courgette', cursive;
+	}
+	.title {
+		font-size: 16vw;
+		margin: 20px 0 30px;
+		position: relative;
+	}
+	.title::before {
+		content: '';
+		background-image: url("/dog_128.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 20px;
+		width: 50px;
+		height: 50px;
+	}
+
+	.title::after {
+		content: '';
+		background-image: url("/dog_128.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+		width: 50px;
+		height: 50px;;
+	}
+
+	.menu-detail {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+</style>
